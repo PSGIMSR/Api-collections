@@ -1,0 +1,709 @@
+{
+  "info": {
+    "_postman_id": "d383f654-b160-447e-a836-c1bfcd5c50a5",
+    "name": "NEW_IICS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26773503",
+    "_collection_link": "https://go.postman.co/collection/26773503-d383f654-b160-447e-a836-c1bfcd5c50a5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Vendor",
+      "item": [
+        {
+          "name": "counts",
+          "item": [
+            {
+              "name": "overallcounts",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/dashboard/overAllCounts",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "dashboard",
+                    "overAllCounts"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "invitations List",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/dashboard/invitations",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "dashboard",
+                    "invitations"
+                  ],
+                  "query": [
+                    {
+                      "key": "invStatus",
+                      "value": "E",
+                      "disabled": true
+                    },
+                    {
+                      "key": "fromDate",
+                      "value": "14-03-2026",
+                      "disabled": true
+                    },
+                    {
+                      "key": "toDate",
+                      "value": "15-03-2026",
+                      "disabled": true
+                    },
+                    {
+                      "key": "emailSearch",
+                      "value": "elambharathi",
+                      "disabled": true
+                    },
+                    {
+                      "key": "itemsPerPage",
+                      "value": null,
+                      "disabled": true
+                    },
+                    {
+                      "key": "currentPage",
+                      "value": null,
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "register List",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/dashboard/register?fromDate=16-03-2026&toDate=17-03-2026&search=BIJU&selectAll&currentPage&itemsPerPage",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "dashboard",
+                    "register"
+                  ],
+                  "query": [
+                    {
+                      "key": "fromDate",
+                      "value": "16-03-2026",
+                      "type": "text"
+                    },
+                    {
+                      "key": "toDate",
+                      "value": "17-03-2026",
+                      "type": "text"
+                    },
+                    {
+                      "key": "search",
+                      "value": "BIJU",
+                      "type": "text"
+                    },
+                    {
+                      "key": "selectAll",
+                      "value": null,
+                      "type": "text"
+                    },
+                    {
+                      "key": "currentPage",
+                      "value": null,
+                      "type": "text"
+                    },
+                    {
+                      "key": "itemsPerPage",
+                      "value": null,
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "temp List",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/dashboard/temp?fromDate=16-03-2026&toDate&search&currentPage&itemsPerPage",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "dashboard",
+                    "temp"
+                  ],
+                  "query": [
+                    {
+                      "key": "fromDate",
+                      "value": "16-03-2026"
+                    },
+                    {
+                      "key": "toDate",
+                      "value": null,
+                      "type": "text"
+                    },
+                    {
+                      "key": "search",
+                      "value": null,
+                      "type": "text"
+                    },
+                    {
+                      "key": "currentPage",
+                      "value": null,
+                      "type": "text"
+                    },
+                    {
+                      "key": "itemsPerPage",
+                      "value": null,
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "=temp update",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"status\":\"C\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/vendor/temporary/move-permanent/BI0078",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "vendor",
+                    "temporary",
+                    "move-permanent",
+                    "BI0078"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "actions",
+          "item": [
+            {
+              "name": "cancell vendors",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/vendors?currentPage=1&itemsPerPage=10&status=A",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "vendors"
+                  ],
+                  "query": [
+                    {
+                      "key": "currentPage",
+                      "value": "1"
+                    },
+                    {
+                      "key": "itemsPerPage",
+                      "value": "10"
+                    },
+                    {
+                      "key": "loginTag",
+                      "value": "N",
+                      "disabled": true
+                    },
+                    {
+                      "key": "currentScreen",
+                      "value": "CancellView",
+                      "disabled": true
+                    },
+                    {
+                      "key": "status",
+                      "value": "A",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "withouApprove",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"LOGIN_TAG\": \"N\",    \"CANCEL_REASON\":\"ggg\"\r\n }",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/vendors/withoutApprove/VI0205",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "vendors",
+                    "withoutApprove",
+                    "VI0205"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/maa/dashboard/register?itemsPerPage=10&currentPage=1",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "maa",
+                    "dashboard",
+                    "register"
+                  ],
+                  "query": [
+                    {
+                      "key": "approveStatus",
+                      "value": "D",
+                      "disabled": true
+                    },
+                    {
+                      "key": "itemsPerPage",
+                      "value": "10"
+                    },
+                    {
+                      "key": "currentPage",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "quotation new",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/taa/vendorItem/new/RA0234",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "taa",
+                "vendorItem",
+                "new",
+                "RA0234"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\":\"C\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/taa/vendorItem/cancel/RA0234/MA\"6 A000001",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "taa",
+                "vendorItem",
+                "cancel",
+                "RA0234",
+                "MA\"6 A000001"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "MonthEnd",
+      "item": [
+        {
+          "name": "recons",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/maa/reconcile/getCurrentStock/ST0001",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "maa",
+                "reconcile",
+                "getCurrentStock",
+                "ST0001"
+              ],
+              "query": [
+                {
+                  "key": "itemsPerPage",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "nameCode",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "approval Get by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/maa/reconcile/getApprovalStock/FSSRC20250401",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "maa",
+                "reconcile",
+                "getApprovalStock",
+                "FSSRC20250401"
+              ],
+              "query": [
+                {
+                  "key": "nameCode",
+                  "value": "true",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "vendorBanks",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"bankName\": \"AXIS BANK\",\r\n  \"bankSName\":\"AXI\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/maa/bank",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "maa",
+                "bank"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"branchName\": \"COIMBATORE MAIN\",\r\n  \"branchSName\":\"cbe\",\r\n  \"bankCode\": \"AX0002\",\r\n  \"ifscCode\": \"ZZIB0000011\",\r\n  \"address\":\"peelamedu,cbe\",\r\n  \"district\":\"coimbatore\",\r\n  \"stateCode\":\"ST0001\",\r\n  \"countryCode\":\"C0001\",\r\n  \"pinCode\":\"624617\",\r\n  \"fmsCode\":\"001\"\r\n\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/maa/branch",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "maa",
+                "branch"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/maa/branch?selectAll=true&nameCode=true&ifscCode=IOBA0001976",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "maa",
+                "branch"
+              ],
+              "query": [
+                {
+                  "key": "selectAll",
+                  "value": "true"
+                },
+                {
+                  "key": "nameCode",
+                  "value": "true"
+                },
+                {
+                  "key": "bankCode",
+                  "value": "BA0004",
+                  "disabled": true
+                },
+                {
+                  "key": "ifscCode",
+                  "value": "IOBA0001976"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/maa/bank?selectAll=true&nameCode=true&ifscCode=IOBA0001976",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "maa",
+                "bank"
+              ],
+              "query": [
+                {
+                  "key": "selectAll",
+                  "value": "true"
+                },
+                {
+                  "key": "nameCode",
+                  "value": "true"
+                },
+                {
+                  "key": "ifscCode",
+                  "value": "IOBA0001976"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

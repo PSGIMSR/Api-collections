@@ -1,0 +1,2474 @@
+{
+  "info": {
+    "_postman_id": "5d0713ff-088a-4ad9-9f97-8fd84c11732e",
+    "name": "AMS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "26773503",
+    "_collection_link": "https://go.postman.co/collection/38300641-5d0713ff-088a-4ad9-9f97-8fd84c11732e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Attributes Master",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/attributesMaster",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "attributesMaster"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ATTRIBUTE_NAME\":\"test 12\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/attributesMaster",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "attributesMaster"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "itemMasterAttributes",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ITEM_CODE\": \"SUFAST000002\",\r\n  \"ATTRIBUTES\": [\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"ATR1125500001\",\r\n      \"VALUE_DATA_TYPE\": \"C\",\r\n      \"VALUE_REQUIRED\": \"Y\",\r\n      \"INPUT_TYPE_CODE\": \"R\",\r\n      \"VALUE_MAX_LENGTH\": 20,\r\n      \"VALUE_MIN_LENGTH\": 1,\r\n      \"OPTIONS\": [\r\n        { \"LABEL\": \"COLOR\", \"VALUE\": \"BALCK COLOR\", \"ORDER\": 1 }\r\n   \r\n      ]\r\n    },\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"ATR1225000002\",\r\n      \"VALUE_DATA_TYPE\": \"C\",\r\n      \"VALUE_REQUIRED\": \"Y\",\r\n      \"INPUT_TYPE_CODE\": \"C\",\r\n      \"VALUE_MAX_LENGTH\": 20,\r\n      \"VALUE_MIN_LENGTH\": 1,\r\n      \"OPTIONS\": [\r\n        { \"LABEL\": \"SIZE\", \"VALUE\": \"15 inch\", \"ORDER\": 1 }\r\n       \r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/itemMasterAttributes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "itemMasterAttributes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ITEM_CODE\": \"SUFAST000002\",\r\n  \"ATTRIBUTES\": [\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"ATR1125500001\",\r\n      \"VALUE_DATA_TYPE\": \"C\",\r\n      \"VALUE_REQUIRED\": \"N\",\r\n      \"INPUT_TYPE_CODE\": \"C\",\r\n      \"VALUE_MAX_LENGTH\":12,\r\n      \"VALUE_MIN_LENGTH\":1,\r\n      \"OPTIONS\": [\r\n { \"LABEL\": \"COLOR\", \"VALUE\": \"WHITE COLOR\", \"ORDER\": 2 },\r\n  { \"LABEL\": \"COLOR\", \"VALUE\": \"BLUE COLOR\", \"ORDER\": 3 }\r\n\r\n\r\n      ]\r\n    },\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"ATR1225000002\",\r\n      \"VALUE_DATA_TYPE\": \"C\",\r\n      \"VALUE_REQUIRED\": \"N\",\r\n      \"INPUT_TYPE_CODE\": \"R\",\r\n      \"OPTIONS\": [\r\n        { \"LABEL\": \"rrt\", \"VALUE\": \"31 inch\", \"ORDER\": 2 }\r\n   \r\n      ]\r\n\r\n    },\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"ATR1125000003\",\r\n      \"VALUE_DATA_TYPE\": \"C\",\r\n      \"VALUE_REQUIRED\": \"N\",\r\n      \"INPUT_TYPE_CODE\": \"R\",\r\n      \"OPTIONS\": [\r\n        { \"LABEL\": \"rrt\", \"VALUE\": \"15 GB\", \"ORDER\": 1 }\r\n   \r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/itemMasterAttributes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "itemMasterAttributes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/itemMasterAttributes/?attributeCode=ATR1225000002",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "itemMasterAttributes",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "MA250A000002",
+                  "disabled": true
+                },
+                {
+                  "key": "attributeCode",
+                  "value": "ATR1225000002",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/itemMasterAttributes/option/?attributeCode=ATR1225000002&itemCode=MA250A000002",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "itemMasterAttributes",
+                "option",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "attributeCode",
+                  "value": "ATR1225000002"
+                },
+                {
+                  "key": "itemCode",
+                  "value": "MA250A000002",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/itemMasterAttributes/combineResult",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "itemMasterAttributes",
+                "combineResult"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "MA1 1/000038",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All item Attribut",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/itemMasterAttributes/getAllView?attributeName=test 3&attributeName=s",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "itemMasterAttributes",
+                "getAllView"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "MA1 1/000038",
+                  "disabled": true
+                },
+                {
+                  "key": "itemName",
+                  "value": "SAMSUNG GALAXY M14 5G",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "attributeName",
+                  "value": "test 3",
+                  "type": "text"
+                },
+                {
+                  "key": "attributeCode",
+                  "value": "ATR1125550001",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "false",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "attributeName",
+                  "value": "s",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "AssestMaster",
+      "item": [
+        {
+          "name": "assets relation",
+          "item": [
+            {
+              "name": "update relation",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"relations\": [\r\n    {\r\n      \"CHILD_ASSET_ID\": \"PSG0526000099\",\r\n      \"RELATION_TYPE\": \"ATTACHED\",\r\n      \"status\": \"A\"\r\n    }\r\n  \r\n  ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/relations/save/PSG0526000067",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "relations",
+                    "save",
+                    "PSG0526000067"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/relations/PSG0526000067",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "relations",
+                    "PSG0526000067"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "assets master",
+          "item": []
+        },
+        {
+          "name": "assets components",
+          "item": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/itemMasterAttributes/combineResult?itemCode=INDELL000014",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "itemMasterAttributes",
+                "combineResult"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "INDELL000014"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "singleAssets",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"assetMaster\": {\r\n    \"CURRENT_ASSET_ID\": \"AST001\",\r\n    \"ITEM_CODE\": \"ITM12345\",\r\n    \"CURRENT_INST_CODE\": \"IN0001\",\r\n    \"CURRENT_UNIT_CODE\": \"UN01\",\r\n    \"CATEGORY_CODE\": \"CT01\",\r\n    \"CURRENT_LOCATION\": \"Building A, Room 101\",\r\n    \"ASSET_CONDITION\": \"G\"\r\n  },\r\n  \"components\": [\r\n    {\r\n      \"ITEM_CODE\": \"ITM12346\",\r\n      \"CATEGORY_CODE\": \"CT01\",\r\n      \"ASSET_STATUS\": \"A\",\r\n      \"ASSET_CONDITION\": \"G\",\r\n      \"REMARKS\": \"Monitor component\"\r\n    },\r\n    {\r\n      \"ITEM_CODE\": \"ITM12347\",\r\n      \"CATEGORY_CODE\": \"CT01\",\r\n      \"ASSET_STATUS\": \"A\",\r\n      \"ASSET_CONDITION\": \"G\",\r\n      \"REMARKS\": \"Keyboard component\"\r\n    }\r\n  ],\r\n  \"attributes\": [\r\n    {\r\n      \"ITEM_CODE\": \"ITM12345\",\r\n      \"ATTRIBUTE_CODE\": \"ATR001\",\r\n      \"ATTRIBUTE_VALUE\": \"Dell\"\r\n    },\r\n    {\r\n      \"ITEM_CODE\": \"ITM12345\",\r\n      \"ATTRIBUTE_CODE\": \"ATR002\",\r\n      \"ATTRIBUTE_VALUE\": \"Model XPS 15\"\r\n    },[\r\n    {\r\n      \"ITEM_CODE\": \"ITM12345\",\r\n      \"ATTRIBUTE_CODE\": \"ATR003\",\r\n      \"ATTRIBUTE_VALUE\": \"SN123456789\"\r\n    },{\r\n      \"ITEM_CODE\": \"ITM12345\",\r\n      \"ATTRIBUTE_CODE\": \"ATR003\",\r\n      \"ATTRIBUTE_VALUE\": \"SN123456789\"\r\n    }\r\n    }\r\n  ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "bulkInsert",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"assets\": [\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM12345\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room A\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [\r\n        { \"ITEM_CODE\": \"COMP001\", \"ASSET_STATUS\": \"A\" },\r\n        { \"ITEM_CODE\": \"COMP002\", \"ASSET_STATUS\": \"A\" }\r\n      ],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR001\", \"ATTRIBUTE_VALUE\": \"Dell\" },\r\n        { \"ATTRIBUTE_CODE\": \"ATR002\", \"ATTRIBUTE_VALUE\": \"Model XPS 15\" }\r\n      ]\r\n    },\r\n\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM99999\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room B\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"SN001\" },{ \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"SN002\" }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "bulk"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"assets\": [\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM12345\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room A\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [\r\n        { \"ITEM_CODE\": \"COMP001\", \"ASSET_STATUS\": \"A\" },\r\n        { \"ITEM_CODE\": \"COMP002\", \"ASSET_STATUS\": \"A\" }\r\n      ],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR001\", \"ATTRIBUTE_VALUE\": \"Dell\" },\r\n        { \"ATTRIBUTE_CODE\": \"ATR002\", \"ATTRIBUTE_VALUE\": \"Model XPS 15\" }\r\n      ]\r\n    },\r\n\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM99999\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room B\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"HP\" }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "bulk"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJQUzAwMDEyMTA3NDQiLCJpYXQiOjE3NjUwMTQzMzksImV4cCI6MTc2NTAxNDM5OX0.RTB_fnh3aQtu5u4No9Axz1fWW4_axWJ3rEzBa_1s2sY; Max-Age=60; Path=/; Expires=Sat, 06 Dec 2025 09:46:39 GMT; HttpOnly; Secure; SameSite=Strict"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "262"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"106-WoCRP2BADWgv640c7wyeT4Q5o34\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 06 Dec 2025 09:45:40 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Bulk assets inserted successfully\",\n    \"totalAssets\": 2,\n    \"timeTaken\": \"632 ms\",\n    \"results\": [\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000009\",\n            \"componentsInserted\": 2,\n            \"attributesInserted\": 2\n        },\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000010\",\n            \"componentsInserted\": 0,\n            \"attributesInserted\": 1\n        }\n    ]\n}"
+            },
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"assets\": [\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM12345\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room A\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [\r\n        { \"ITEM_CODE\": \"COMP001\", \"ASSET_STATUS\": \"A\" },\r\n        { \"ITEM_CODE\": \"COMP002\", \"ASSET_STATUS\": \"A\" }\r\n      ],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR001\", \"ATTRIBUTE_VALUE\": \"Dell\" },\r\n        { \"ATTRIBUTE_CODE\": \"ATR002\", \"ATTRIBUTE_VALUE\": \"Model XPS 15\" }\r\n      ]\r\n    },\r\n\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM99999\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room B\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"HP\" }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "bulk"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJQUzAwMDEyMTA3NDQiLCJpYXQiOjE3NjUwMTQzMzksImV4cCI6MTc2NTAxNDM5OX0.RTB_fnh3aQtu5u4No9Axz1fWW4_axWJ3rEzBa_1s2sY; Max-Age=60; Path=/; Expires=Sat, 06 Dec 2025 09:46:39 GMT; HttpOnly; Secure; SameSite=Strict"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "262"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"106-WoCRP2BADWgv640c7wyeT4Q5o34\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 06 Dec 2025 09:45:40 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Bulk assets inserted successfully\",\n    \"totalAssets\": 2,\n    \"timeTaken\": \"632 ms\",\n    \"results\": [\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000009\",\n            \"componentsInserted\": 2,\n            \"attributesInserted\": 2\n        },\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000010\",\n            \"componentsInserted\": 0,\n            \"attributesInserted\": 1\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "bulkAssetsMultiple",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"assetMaster\": {\r\n    \"ITEM_CODE\": \"ITM12345\",\r\n    \"CURRENT_INST_CODE\": \"IN0001\",\r\n    \"CURRENT_UNIT_CODE\": \"UN01\",\r\n    \"CATEGORY_CODE\": \"CT01\",\r\n    \"CURRENT_LOCATION\": \"Building A, Room 101\",\r\n    \"ASSET_CONDITION\": \"G\"\r\n  },\r\n  \"components\": [\r\n    {\r\n      \"ITEM_CODE\": \"ITM12346\",\r\n      \"CATEGORY_CODE\": \"CT01\",\r\n      \"ASSET_STATUS\": \"A\",\r\n      \"ASSET_CONDITION\": \"G\",\r\n      \"REMARKS\": \"Monitor component\"\r\n    }\r\n  ],\r\n  \"attributes\": [\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"COLOR\",\r\n      \"VALUES\": [\"Black\", \"Blue\"]\r\n    },\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"IMEI\",\r\n      \"VALUES\": [\"1111\", \"2222\"]\r\n    },\r\n    {\r\n      \"ATTRIBUTE_CODE\": \"RAM\",\r\n      \"VALUES\": [\"4GB\"]\r\n    }\r\n  ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/attributes/bulkMultiple",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "attributes",
+                "bulkMultiple"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"assets\": [\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM12345\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room A\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [\r\n        { \"ITEM_CODE\": \"COMP001\", \"ASSET_STATUS\": \"A\" },\r\n        { \"ITEM_CODE\": \"COMP002\", \"ASSET_STATUS\": \"A\" }\r\n      ],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR001\", \"ATTRIBUTE_VALUE\": \"Dell\" },\r\n        { \"ATTRIBUTE_CODE\": \"ATR002\", \"ATTRIBUTE_VALUE\": \"Model XPS 15\" }\r\n      ]\r\n    },\r\n\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM99999\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room B\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"HP\" }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "bulk"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJQUzAwMDEyMTA3NDQiLCJpYXQiOjE3NjUwMTQzMzksImV4cCI6MTc2NTAxNDM5OX0.RTB_fnh3aQtu5u4No9Axz1fWW4_axWJ3rEzBa_1s2sY; Max-Age=60; Path=/; Expires=Sat, 06 Dec 2025 09:46:39 GMT; HttpOnly; Secure; SameSite=Strict"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "262"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"106-WoCRP2BADWgv640c7wyeT4Q5o34\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 06 Dec 2025 09:45:40 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Bulk assets inserted successfully\",\n    \"totalAssets\": 2,\n    \"timeTaken\": \"632 ms\",\n    \"results\": [\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000009\",\n            \"componentsInserted\": 2,\n            \"attributesInserted\": 2\n        },\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000010\",\n            \"componentsInserted\": 0,\n            \"attributesInserted\": 1\n        }\n    ]\n}"
+            },
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"assets\": [\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM12345\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room A\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [\r\n        { \"ITEM_CODE\": \"COMP001\", \"ASSET_STATUS\": \"A\" },\r\n        { \"ITEM_CODE\": \"COMP002\", \"ASSET_STATUS\": \"A\" }\r\n      ],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR001\", \"ATTRIBUTE_VALUE\": \"Dell\" },\r\n        { \"ATTRIBUTE_CODE\": \"ATR002\", \"ATTRIBUTE_VALUE\": \"Model XPS 15\" }\r\n      ]\r\n    },\r\n\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM99999\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room B\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"HP\" }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "bulk"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJQUzAwMDEyMTA3NDQiLCJpYXQiOjE3NjUwMTQzMzksImV4cCI6MTc2NTAxNDM5OX0.RTB_fnh3aQtu5u4No9Axz1fWW4_axWJ3rEzBa_1s2sY; Max-Age=60; Path=/; Expires=Sat, 06 Dec 2025 09:46:39 GMT; HttpOnly; Secure; SameSite=Strict"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "262"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"106-WoCRP2BADWgv640c7wyeT4Q5o34\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 06 Dec 2025 09:45:40 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Bulk assets inserted successfully\",\n    \"totalAssets\": 2,\n    \"timeTaken\": \"632 ms\",\n    \"results\": [\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000009\",\n            \"componentsInserted\": 2,\n            \"attributesInserted\": 2\n        },\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000010\",\n            \"componentsInserted\": 0,\n            \"attributesInserted\": 1\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "bulkAssetsMultiple Copy",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ITEM_CODE\": \"MA1 1/000038\",\r\n  \"CURRENT_INST_CODE\": \"IN0008\",\r\n  \"CURRENT_UNIT_CODE\": \"PS0013\",\r\n  \"CURRENT_DEPT_CODE\": \"D00821\",\r\n  \"CATEGORY_CODE\": \"sd\",\r\n  \"CURRENT_LOCATION\": \"ds\",\r\n  \"ASSET_CONDITION\": \"G\",\r\n  \"attributes\": [\r\n    {\r\n      \"COUNT\": 1,\r\n      \"attributesValue\": [\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1125000003\",\r\n          \"ATTRIBUTE_VALUE\": \"s\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1125500001\",\r\n          \"ATTRIBUTE_VALUE\": \"fd\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1125550001\",\r\n          \"ATTRIBUTE_VALUE\": \"2025-12-22T18:30:00.000Z\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1225000001\",\r\n          \"ATTRIBUTE_VALUE\": \"s\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1225000002\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1225000003\",\r\n          \"ATTRIBUTE_VALUE\": \"10\"\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"COUNT\": 3,\r\n      \"attributesValue\": [\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1125000003\",\r\n          \"ATTRIBUTE_VALUE\": \"ghf\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1125500001\",\r\n          \"ATTRIBUTE_VALUE\": \"fd\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1125550001\",\r\n          \"ATTRIBUTE_VALUE\": \"2025-12-22T18:30:00.000Z\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1225000001\",\r\n          \"ATTRIBUTE_VALUE\": \"s\"\r\n        },\r\n        {   \r\n          \"ATTRIBUTE_CODE\": \"ATR1225000002\"\r\n        },\r\n        {\r\n          \"ATTRIBUTE_CODE\": \"ATR1225000003\",\r\n          \"ATTRIBUTE_VALUE\": \"10\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk-multiple",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "bulk-multiple"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"assets\": [\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM12345\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room A\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [\r\n        { \"ITEM_CODE\": \"COMP001\", \"ASSET_STATUS\": \"A\" },\r\n        { \"ITEM_CODE\": \"COMP002\", \"ASSET_STATUS\": \"A\" }\r\n      ],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR001\", \"ATTRIBUTE_VALUE\": \"Dell\" },\r\n        { \"ATTRIBUTE_CODE\": \"ATR002\", \"ATTRIBUTE_VALUE\": \"Model XPS 15\" }\r\n      ]\r\n    },\r\n\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM99999\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room B\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"HP\" }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "bulk"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJQUzAwMDEyMTA3NDQiLCJpYXQiOjE3NjUwMTQzMzksImV4cCI6MTc2NTAxNDM5OX0.RTB_fnh3aQtu5u4No9Axz1fWW4_axWJ3rEzBa_1s2sY; Max-Age=60; Path=/; Expires=Sat, 06 Dec 2025 09:46:39 GMT; HttpOnly; Secure; SameSite=Strict"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "262"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"106-WoCRP2BADWgv640c7wyeT4Q5o34\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 06 Dec 2025 09:45:40 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Bulk assets inserted successfully\",\n    \"totalAssets\": 2,\n    \"timeTaken\": \"632 ms\",\n    \"results\": [\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000009\",\n            \"componentsInserted\": 2,\n            \"attributesInserted\": 2\n        },\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000010\",\n            \"componentsInserted\": 0,\n            \"attributesInserted\": 1\n        }\n    ]\n}"
+            },
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"assets\": [\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM12345\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room A\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [\r\n        { \"ITEM_CODE\": \"COMP001\", \"ASSET_STATUS\": \"A\" },\r\n        { \"ITEM_CODE\": \"COMP002\", \"ASSET_STATUS\": \"A\" }\r\n      ],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR001\", \"ATTRIBUTE_VALUE\": \"Dell\" },\r\n        { \"ATTRIBUTE_CODE\": \"ATR002\", \"ATTRIBUTE_VALUE\": \"Model XPS 15\" }\r\n      ]\r\n    },\r\n\r\n    {\r\n      \"assetMaster\": {\r\n        \"ITEM_CODE\": \"ITM99999\",\r\n        \"CURRENT_INST_CODE\": \"IN0001\",\r\n        \"CATEGORY_CODE\": \"CT01\",\r\n        \"CURRENT_LOCATION\": \"Room B\",\r\n        \"ASSET_CONDITION\": \"G\"\r\n      },\r\n      \"components\": [],\r\n      \"attributes\": [\r\n        { \"ATTRIBUTE_CODE\": \"ATR777\", \"ATTRIBUTE_VALUE\": \"HP\" }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/bulk",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "bulk"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJQUzAwMDEyMTA3NDQiLCJpYXQiOjE3NjUwMTQzMzksImV4cCI6MTc2NTAxNDM5OX0.RTB_fnh3aQtu5u4No9Axz1fWW4_axWJ3rEzBa_1s2sY; Max-Age=60; Path=/; Expires=Sat, 06 Dec 2025 09:46:39 GMT; HttpOnly; Secure; SameSite=Strict"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "262"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"106-WoCRP2BADWgv640c7wyeT4Q5o34\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 06 Dec 2025 09:45:40 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"message\": \"Bulk assets inserted successfully\",\n    \"totalAssets\": 2,\n    \"timeTaken\": \"632 ms\",\n    \"results\": [\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000009\",\n            \"componentsInserted\": 2,\n            \"attributesInserted\": 2\n        },\n        {\n            \"CURRENT_ASSET_ID\": \"HOS1225000010\",\n            \"componentsInserted\": 0,\n            \"attributesInserted\": 1\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "assest info all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster?currentAssetId=HOS0526000067",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "ITM12345",
+                  "disabled": true
+                },
+                {
+                  "key": "currentAssetId",
+                  "value": "HOS0526000067"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "componets",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/components?itemCode=INDELL000014",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "components"
+              ],
+              "query": [
+                {
+                  "key": "currentAssetId",
+                  "value": "HOS1225000008",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "itemCode",
+                  "value": "INDELL000014"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get assets attributes data",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/attributes?itemCode=INDELL000014&uniqueId=PSG0526000067",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "attributes"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "INDELL000014"
+                },
+                {
+                  "key": "uniqueId",
+                  "value": "PSG0526000067"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all assest",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/all?nameCode=true",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "all"
+              ],
+              "query": [
+                {
+                  "key": "nameCode",
+                  "value": "true"
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "name",
+                  "value": "PSG0526000072",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "new Single Attribute",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[{\"ATTRIBUTE_CODE\": \"ATR0526000004\", \"VALUE\": \"Red\", \"status\": \"A\"},\r\n {\"ATTRIBUTE_CODE\": \"ATR0526000006\",\"VALUE\": \"1920 * 1080\", \"status\": \"A\"}, \r\n {\"ATTRIBUTE_CODE\": \"ATR0526000007\",\"VALUE\":\"ATR0526000007_MANU_INVOICE\",\"status\":\"A\"}]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/attributes/PSG0526000067/INDELL000014",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "attributes",
+                "PSG0526000067",
+                "INDELL000014"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "new Componets",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {\"components\": [\r\n        { \"ITEM_CODE\": \"STCHIS000003\", \"ASSET_STATUS\": \"A\" ,\"ASSET_CONDITION\":\"G\",\"MAJ_CATEGORY_CODE\":\"C001\",\"CATEGORY_CODE\":\"C001\",\"SUB_CATEGORY_CODE\":\"C001\"},\r\n        { \"ITEM_CODE\": \"INDELL000014\", \"ASSET_STATUS\": \"A\" ,\"ASSET_CONDITION\":\"B\"},\r\n                { \"ITEM_CODE\": \"INDELL000015\", \"ASSET_STATUS\": \"A\" ,\"ASSET_CONDITION\":\"B\"}\r\n\r\n      ]\r\n\r\n    }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/components/PSG0526000067\n",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "components",
+                "PSG0526000067\n"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "assets Main",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"CATEGORY_CODE\":\"T0001\",\r\n  \"CURRENT_LOCATION\": \"A BLOCK\",\r\n  \"ASSET_CONDITION\": \"G\",\r\n  \"SUB_CATEGORY_CODE\":\"T0001\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/master/HOS0526000067",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "master",
+                "HOS0526000067"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "assets components",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": [
+            {
+              "name": "New Request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/view/PSG0526000067",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "taa",
+                    "assetMaster",
+                    "view",
+                    "PSG0526000067"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "4064"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"fe0-0gU9u8nEpbXNe7BENoUqjF3pnnM\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 22 May 2026 06:52:04 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"statusCode\": 200,\n    \"data\": {\n        \"basicInfo\": {\n            \"UNIQUE_ASSET_ID\": \"PSG0526000067\",\n            \"CURRENT_ASSET_ID\": \"HOS0526000067\",\n            \"ITEM_CODE\": \"INDELL000014\",\n            \"ITEM_NAME\": \"DELL CPU 3080\",\n            \"CURRENT_INST_CODE\": \"IN0001\",\n            \"INST_NAME\": \"PSG HOSPITALS\",\n            \"CURRENT_UNIT_CODE\": \"PS0001\",\n            \"UNIT_NAME\": \"PSG SUPER SPECIALITY HOSPITAL\",\n            \"CURRENT_DEPT_CODE\": null,\n            \"DEPT_NAME\": null,\n            \"MAJOR_CATEGORY_CODE\": \"II001\",\n            \"MAJOR_CATEGORY_NAME\": \"IICS\",\n            \"CATEGORY_CODE\": \"T0001\",\n            \"SUB_CATEGORY_CODE\": null,\n            \"CURRENT_LOCATION\": \"B BLOCK\",\n            \"ASSET_STATUS\": \"A\",\n            \"ASSET_CONDITION\": \"G\",\n            \"CHILD_COUNT\": 3,\n            \"HAS_CHILD_TAG\": \"Y\"\n        },\n        \"components\": [\n            {\n                \"COMPONENT_ID\": \"CMPMA\\\"0526001\",\n                \"ITEM_CODE\": \"MA\\\"16A000001\",\n                \"ITEM_NAME\": \"\\\"16AMPS PLUG POINTS (PROJECTOR) 16 AMPS PLUG POINT OF FRONT PLATE, SWITCHES SOCKETS ,SHEETS, SCREWS ETC., AS PER THE SITE CONDITION.\\\"\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"F\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPMA\\\"0526002\",\n                \"ITEM_CODE\": \"MA\\\"DAT000001\",\n                \"ITEM_NAME\": \"\\\"DATA POINT  COMPUTER POINT MODULAR PLATE TYPE RJ-45 JACK,  BOTH ENDS FERRULES AND TERMINATION METAL BOX, JUNCTION BOX, FRONT PLATE & SCREWS , ETC.,COMPLETE WORK.\\\"\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"P\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPMA\\\"0526002\",\n                \"ITEM_CODE\": \"MA\\\"DAT000001\",\n                \"ITEM_NAME\": \"\\\"DATA POINT  COMPUTER POINT MODULAR PLATE TYPE RJ-45 JACK,  BOTH ENDS FERRULES AND TERMINATION METAL BOX, JUNCTION BOX, FRONT PLATE & SCREWS , ETC.,COMPLETE WORK.\\\"\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"P\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPIND0526002\",\n                \"ITEM_CODE\": \"INDELL000015\",\n                \"ITEM_NAME\": \"DELL MONITOR\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"B\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPSTC0526001\",\n                \"ITEM_CODE\": \"STCHIS000003\",\n                \"ITEM_NAME\": \"CHISEL MARKER BLACK\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"G\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPIND0526001\",\n                \"ITEM_CODE\": \"INDELL000014\",\n                \"ITEM_NAME\": \"DELL CPU 3080\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"B\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPMA\\\"0526003\",\n                \"ITEM_CODE\": \"MA\\\"2 N000001\",\n                \"ITEM_NAME\": \"\\\"2 NOS 6/16 AMPS PLUG POINT SYSTEM 2 NOS 6/16 AMPS PLUG POINT OF FRONT PLATE, SWITCHS SOCKETS ,SHEETS, SCREWS ETC., AS PER THE SITE CONDITION.\\\"\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"G\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPMA\\\"0526003\",\n                \"ITEM_CODE\": \"MA\\\"2 N000001\",\n                \"ITEM_NAME\": \"\\\"2 NOS 6/16 AMPS PLUG POINT SYSTEM 2 NOS 6/16 AMPS PLUG POINT OF FRONT PLATE, SWITCHS SOCKETS ,SHEETS, SCREWS ETC., AS PER THE SITE CONDITION.\\\"\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"G\"\n            },\n            {\n                \"COMPONENT_ID\": \"CMPMA\\\"0526004\",\n                \"ITEM_CODE\": \"MA\\\"6/1000001\",\n                \"ITEM_NAME\": \"\\\"6/16AMPS PLUG POINTS (CORRIDORS)  2 NOS 6/16 AMPS PLUG POINT OF FRONT PLATE, SWITCHES SOCKETS ,SHEETS, SCREWS ETC., AS PER THE SITE CONDITION.\\\"\",\n                \"ASSET_STATUS\": \"A\",\n                \"ASSET_CONDITION\": \"G\"\n            }\n        ],\n        \"attributes\": [\n            {\n                \"ATTRIBUTE_CODE\": \"ATR0526000008\",\n                \"ATTRIBUTE_VALUE\": \"1\",\n                \"ATTRIBUTE_VALUE_CLOB\": null,\n                \"ATTRIBUTE_NAME\": \"TEST234\",\n                \"INPUT_TYPE\": \"S\",\n                \"VALUE_DATA_TYPE\": \"C\"\n            },\n            {\n                \"ATTRIBUTE_CODE\": \"ATR0526000005\",\n                \"ATTRIBUTE_VALUE\": \"18-05-2026\",\n                \"ATTRIBUTE_VALUE_CLOB\": null,\n                \"ATTRIBUTE_NAME\": \"MANUFACTURE DATE\",\n                \"INPUT_TYPE\": \"D\",\n                \"VALUE_DATA_TYPE\": \"D\"\n            },\n            {\n                \"ATTRIBUTE_CODE\": \"ATR0526000002\",\n                \"ATTRIBUTE_VALUE\": \"19-05-2026\",\n                \"ATTRIBUTE_VALUE_CLOB\": null,\n                \"ATTRIBUTE_NAME\": \"dae\",\n                \"INPUT_TYPE\": \"D\",\n                \"VALUE_DATA_TYPE\": \"D\"\n            },\n            {\n                \"ATTRIBUTE_CODE\": \"ATR0526000004\",\n                \"ATTRIBUTE_VALUE\": \"RED\",\n                \"ATTRIBUTE_VALUE_CLOB\": null,\n                \"ATTRIBUTE_NAME\": \"COLOR\",\n                \"INPUT_TYPE\": \"S\",\n                \"VALUE_DATA_TYPE\": \"C\"\n            },\n            {\n                \"ATTRIBUTE_CODE\": \"ATR0526000006\",\n                \"ATTRIBUTE_VALUE\": \"3840 *2160\",\n                \"ATTRIBUTE_VALUE_CLOB\": null,\n                \"ATTRIBUTE_NAME\": \"RESOLUTION\",\n                \"INPUT_TYPE\": \"S\",\n                \"VALUE_DATA_TYPE\": \"C\"\n            },\n            {\n                \"ATTRIBUTE_CODE\": \"ATR0526000009\",\n                \"ATTRIBUTE_VALUE\": \"2\",\n                \"ATTRIBUTE_VALUE_CLOB\": null,\n                \"ATTRIBUTE_NAME\": \"Bill\",\n                \"INPUT_TYPE\": \"F\",\n                \"VALUE_DATA_TYPE\": \"C\"\n            },\n            {\n                \"ATTRIBUTE_CODE\": \"ATR0526000007\",\n                \"ATTRIBUTE_VALUE\": \"3\",\n                \"ATTRIBUTE_VALUE_CLOB\": null,\n                \"ATTRIBUTE_NAME\": \"INVOICE\",\n                \"INPUT_TYPE\": \"F\",\n                \"VALUE_DATA_TYPE\": \"F\"\n            }\n        ],\n        \"childAssets\": [\n            {\n                \"CHILD_ASSET_ID\": \"PSG0526000075\",\n                \"RELATION_TYPE\": \"ACCESSORY\",\n                \"EFFECTIVE_FROM\": \"21-05-2026\",\n                \"EFFECTIVE_TO\": null,\n                \"CHILD_ITEM_CODE\": \"MIA4 P000001\",\n                \"CHILD_ITEM_NAME\": \"A4 PAPER 75 GSM\"\n            },\n            {\n                \"CHILD_ASSET_ID\": \"PSG0526000068\",\n                \"RELATION_TYPE\": \"ACCESSORY\",\n                \"EFFECTIVE_FROM\": \"21-05-2026\",\n                \"EFFECTIVE_TO\": null,\n                \"CHILD_ITEM_CODE\": \"INDELL000014\",\n                \"CHILD_ITEM_NAME\": \"DELL CPU 3080\"\n            }\n        ]\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetMaster/all?selectAll=true&nameCode=true",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetMaster",
+                "all"
+              ],
+              "query": [
+                {
+                  "key": "selectAll",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "nameCode",
+                  "value": "true",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "get Major",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category?selectAll=true",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "INDELL000017",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"CATEGORY_NAME\":\"IICS\",\r\n    \"CATEGORY_DESC\":\"testing\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Major Category Copy",
+      "item": [
+        {
+          "name": "get Major",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category/majorCategory?selectAll=true",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category",
+                "majorCategory"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "INDELL000017",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"MAJOR_CATEGORY_LNAME\":\"IICS\",\r\n    \"MAJOR_CATEGORY_SNAME\":\"testing\",\r\n    \"MAJOR_CATEGORY_DESC\":\"testing\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category/majorCategory",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category",
+                "majorCategory"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "sub Category",
+      "item": [
+        {
+          "name": "get Major",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category/subCategory?selectAll=true&categoryCode=TE001",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category",
+                "subCategory"
+              ],
+              "query": [
+                {
+                  "key": "itemCode",
+                  "value": "INDELL000017",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true"
+                },
+                {
+                  "key": "categoryCode",
+                  "value": "TE001",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"CATEGORY_CODE\":\"TE001\",\r\n    \"SUB_CATEGORY_DESC\":\"testing\",\r\n    \"SUB_CATEGORY_NAME\":\"testing\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category/subCategory",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category",
+                "subCategory"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Assest Orgn Hod  Mapp",
+      "item": [
+        {
+          "name": "get Major",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category/majorCategoryOrgn",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category",
+                "majorCategoryOrgn"
+              ],
+              "query": [
+                {
+                  "key": "selectAll",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "currentAssetId",
+                  "value": "HOS1225000008",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[{\"MAJOR_CATEGORY_CODE\":\"IN001\",\"ORGN_CODE\":\"PS0001\",\"HOD_USER_ID\":\"PS0001210744\",\"HOD_ALTERNATIVE_ID\":\"PS0001210896\"},\r\n{\"MAJOR_CATEGORY_CODE\":\"MC001\",\"ORGN_CODE\":\"PS0002\",\"HOD_USER_ID\":\"PS0001210744\"}]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/maa/category/majorCategoryOrgn",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "category",
+                "majorCategoryOrgn"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "userMapAssests",
+      "item": [
+        {
+          "name": "inser user cat",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"userId\": \"US001\",\r\n  \"orgnCode\": \"PS0001\",\r\n  \"AssetCat\": [\r\n    { \"catCode\": \"MC001\" },\r\n    { \"catCode\": \"MC002\", \"close\": true },\r\n    { \"catCode\": \"MC003\" }\r\n  ]\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/user-category-map",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "user-category-map"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "showUser Asstet category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/maa/user-category-map?nameCode=true&selectAll =true",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "maa",
+                "user-category-map"
+              ],
+              "query": [
+                {
+                  "key": "USER_ID",
+                  "value": "US001",
+                  "disabled": true
+                },
+                {
+                  "key": "ORGN_CODE",
+                  "value": "PS0001",
+                  "disabled": true
+                },
+                {
+                  "key": "MAJOR_CATEGORY_CODE",
+                  "value": "MC003",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "nameCode",
+                  "value": "true",
+                  "type": "text"
+                },
+                {
+                  "key": "selectAll ",
+                  "value": "true",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "dashBoard",
+      "item": [
+        {
+          "name": "maual",
+          "item": [
+            {
+              "name": "MANAUL DATA",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/ams/dashBoard/manual-assign/list",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "dashBoard",
+                    "manual-assign",
+                    "list"
+                  ],
+                  "query": [
+                    {
+                      "key": "selectAll",
+                      "value": "true",
+                      "disabled": true
+                    },
+                    {
+                      "key": "status",
+                      "value": "N",
+                      "disabled": true
+                    },
+                    {
+                      "key": "inwardNo",
+                      "value": null,
+                      "disabled": true
+                    },
+                    {
+                      "key": "itemCode",
+                      "value": null,
+                      "disabled": true
+                    },
+                    {
+                      "key": "majCategoryCode",
+                      "value": "II001",
+                      "disabled": true
+                    },
+                    {
+                      "key": "orgnCode",
+                      "value": "PS0001",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "GETR BY ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://192.168.90.203:4000/api/v1/ams/dashBoard/manual-assign/details?itemCode=STCHIS000003&majorCategoryCode=II001&orgnCode=PS0001",
+                  "protocol": "http",
+                  "host": [
+                    "192",
+                    "168",
+                    "90",
+                    "203"
+                  ],
+                  "port": "4000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "ams",
+                    "dashBoard",
+                    "manual-assign",
+                    "details"
+                  ],
+                  "query": [
+                    {
+                      "key": "itemCode",
+                      "value": "STCHIS000003"
+                    },
+                    {
+                      "key": "majorCategoryCode",
+                      "value": "II001"
+                    },
+                    {
+                      "key": "orgnCode",
+                      "value": "PS0001"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "taa/assest/excel",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "assest excel",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "file",
+                  "key": "file",
+                  "src": "/C:/Users/psgh/Downloads/Sample_Asset_Data.xlsx"
+                },
+                {
+                  "type": "text",
+                  "key": "payload",
+                  "value": "{\"columnMatch\": { \"S.No\": \"P001\", \"color\": \"P002\" },\n\"assetIdCol\": \"Asset_ID\",\n\"itemCodeCol\": \"Item_Code\"\n}"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/taa/asset-attribute-job",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "asset-attribute-job"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "taa/assest/excel Copy",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "assest excel",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "type": "file",
+                  "key": "file",
+                  "src": "/C:/Users/psgh/Downloads/Sample_Asset_Data.xlsx"
+                },
+                {
+                  "type": "text",
+                  "key": "payload",
+                  "value": "{\"columnMatch\": { \"S.No\": \"P001\", \"color\": \"P002\" },\n\"assetIdCol\": \"Asset_ID\",\n\"itemCodeCol\": \"Item_Code\"\n}"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/taa/asset-attribute-job",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "asset-attribute-job"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "inwardAssetsHistory",
+      "item": [
+        {
+          "name": "getInward Master",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "currentScreen",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "35f08327-6716-449c-aed5-cb38866dc20a",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/taa/assetInwardHistory/master?selectAll=true",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetInwardHistory",
+                "master"
+              ],
+              "query": [
+                {
+                  "key": "currentScreen",
+                  "value": "AssestGenrationStore",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true"
+                },
+                {
+                  "key": "nameCode",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "status",
+                  "value": "N",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/taa/assetInwardHistory/details/HOSIN05260004/STA0 3000001",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetInwardHistory",
+                "details",
+                "HOSIN05260004",
+                "STA0 3000001"
+              ],
+              "query": [
+                {
+                  "key": "currentScreen",
+                  "value": "AssestGenrationStore",
+                  "disabled": true
+                },
+                {
+                  "key": "selectAll",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "nameCode",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://192.168.90.203:4000/api/v1/ams/taa/assetInwardHistory/master/HOSIN05260004/STA0 3000001?currentScreen=AssestGenrationStore",
+              "protocol": "http",
+              "host": [
+                "192",
+                "168",
+                "90",
+                "203"
+              ],
+              "port": "4000",
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetInwardHistory",
+                "master",
+                "HOSIN05260004",
+                "STA0 3000001"
+              ],
+              "query": [
+                {
+                  "key": "currentScreen",
+                  "value": "AssestGenrationStore"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "assest image",
+      "item": [
+        {
+          "name": "assets Image",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "documentsMeta",
+                  "value": "[{\"name\":\"Invoice 2\",\"tag\":\"Invoice\"}]",
+                  "type": "text",
+                  "uuid": "3afea790-8c96-4cd8-a139-00d34f794cae"
+                },
+                {
+                  "key": "documents",
+                  "type": "file",
+                  "uuid": "a2336830-5f0a-4ccf-8648-91628fff08e8",
+                  "src": "0LO6Hqw1U/image (4).png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetDocuments/assestAttribute/PSG0526000067/INDELL000014",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetDocuments",
+                "assestAttribute",
+                "PSG0526000067",
+                "INDELL000014"
+              ],
+              "query": [
+                {
+                  "key": "documentsMeta",
+                  "value": "[{\"name\":\"PSG0526000067_INVOICE\"}]",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "documents",
+                  "value": "[object Object]",
+                  "type": "file",
+                  "disabled": true
+                },
+                {
+                  "key": "document",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "assets Document",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "documentsMeta",
+                  "value": "[{\"name\":\"IINVOICE\"}]",
+                  "type": "text",
+                  "uuid": "3afea790-8c96-4cd8-a139-00d34f794cae"
+                },
+                {
+                  "key": "documents",
+                  "type": "file",
+                  "uuid": "a2336830-5f0a-4ccf-8648-91628fff08e8",
+                  "src": "0LO6Hqw1U/image (4).png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetDocuments/assestAttribute/PSG0526000067/INDELL000014/ATR0526000007",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetDocuments",
+                "assestAttribute",
+                "PSG0526000067",
+                "INDELL000014",
+                "ATR0526000007"
+              ],
+              "query": [
+                {
+                  "key": "documentsMeta",
+                  "value": "[{\"name\":\"PSG0526000067_INVOICE\"}]",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "documents",
+                  "value": "[object Object]",
+                  "type": "file",
+                  "disabled": true
+                },
+                {
+                  "key": "document",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get Document Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetDocuments/assestAttribute/details/PSG0526000067/INDELL000014/ATR0526000007",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetDocuments",
+                "assestAttribute",
+                "details",
+                "PSG0526000067",
+                "INDELL000014",
+                "ATR0526000007"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get Document",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://172.17.100.61:8888/reports/rwservlet?server=repserv12cstdby9&report=/home/psgfr12c/psghis_12c_apps/iics/reports/IICS_IP_ISSUES_WITH_RATE_OT.rdf&paramform=no&IP=O23090561&FROM_DATE=01-05-2026 2014 3A06&TO_DATE=20-05-2026%2022%3A07&DEPT=D01759&destype=CACHE&desformat=PDF&userid=his/his@psgh19c",
+              "protocol": "http",
+              "host": [
+                "172",
+                "17",
+                "100",
+                "61"
+              ],
+              "port": "8888",
+              "path": [
+                "reports",
+                "rwservlet"
+              ],
+              "query": [
+                {
+                  "key": "server",
+                  "value": "repserv12cstdby9"
+                },
+                {
+                  "key": "report",
+                  "value": "/home/psgfr12c/psghis_12c_apps/iics/reports/IICS_IP_ISSUES_WITH_RATE_OT.rdf"
+                },
+                {
+                  "key": "paramform",
+                  "value": "no"
+                },
+                {
+                  "key": "IP",
+                  "value": "O23090561"
+                },
+                {
+                  "key": "FROM_DATE",
+                  "value": "01-05-2026 2014 3A06"
+                },
+                {
+                  "key": "TO_DATE",
+                  "value": "20-05-2026%2022%3A07"
+                },
+                {
+                  "key": "DEPT",
+                  "value": "D01759"
+                },
+                {
+                  "key": "destype",
+                  "value": "CACHE"
+                },
+                {
+                  "key": "desformat",
+                  "value": "PDF"
+                },
+                {
+                  "key": "userid",
+                  "value": "his/his@psgh19c"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/taa/assetDocuments/assestAttribute/PSG0526000067_IINVOICE_2",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "taa",
+                "assetDocuments",
+                "assestAttribute",
+                "PSG0526000067_IINVOICE_2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "overAll",
+      "item": [
+        {
+          "name": "itemWise",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/overAll/view/itemWise",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "overAll",
+                "view",
+                "itemWise"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/ams/overAll/view/PSG0526000067",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "ams",
+                "overAll",
+                "view",
+                "PSG0526000067"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
